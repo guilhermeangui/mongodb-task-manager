@@ -115,24 +115,24 @@ mongoose.connect('mongodb://127.0.0.1:27017/task-manager-api', {
 
 
 // Creating a task with validations
-const Task = mongoose.model('Task', {
-	description: {
-		type: String,
-		required: true,
-		trim: true,
-	},
-	completed: {
-		type: String,
-		default: false,
-	},
-})
+// const Task = mongoose.model('Task', {
+// 	description: {
+// 		type: String,
+// 		required: true,
+// 		trim: true,
+// 	},
+// 	completed: {
+// 		type: String,
+// 		default: false,
+// 	},
+// })
 
-const task = new Task({
-	description: 'coco',
-})
+// const task = new Task({
+// 	description: 'coco',
+// })
 
-task.save().then(() => {
-	console.log(task)
-}).catch((error) => {
-	console.log('Error!', error)
-})
+// task.save().then(() => {
+// 	console.log(task)
+// }).catch((error) => {
+// 	console.log('Error!', error)
+// })
